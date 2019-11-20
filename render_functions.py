@@ -37,7 +37,7 @@ def render_all(con, entities, player, game_map, fov_map, fov_recompute, SCREEN_W
 
 	libtcod.console_set_default_foreground(con, libtcod.white)
 	libtcod.console_print_ex(con, 1, SCREEN_HEIGHT - 2, libtcod.BKGND_NONE, libtcod.LEFT,
-							 'HP: {0:02}/{1:02}'.format(player.fighter.hp, player.fighter.max_hp)
+							 'HP: {0:02}/{1:02}'.format(player.fighter.hp, player.fighter.max_hp))
 	libtcod.console_blit(con, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 0)
 
 def clear_all(con, entities):
